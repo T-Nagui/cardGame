@@ -41,5 +41,6 @@ mysqlIp:
 logs:
 	make up && docker-compose logs -f
 
-fixuser:
-	sudo groupadd docker && sudo usermod -aG docker $USER
+phpcs-fix:
+	docker exec -it app_php bash -c './vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --using-cache=no --verbose src/ \
+        && ./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --using-cache=no --verbose tests/'
