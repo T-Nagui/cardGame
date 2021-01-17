@@ -30,3 +30,24 @@ Did you mean one of these?
     make:validator
     make:voter"
 
+[15-Jan-2021 15:24:03 UTC] [error] Error thrown while running command "make:migration". Message: "An exception occurred in driver: could not find driver"
+
+[15-Jan-2021 15:24:46 UTC] [error] Error thrown while running command "make:migration". Message: "An exception occurred in driver: SQLSTATE[HY000] [1044] Access denied for user 'nagui'@'%' to database 'db_name'"
+
+[15-Jan-2021 15:25:04 UTC] [error] Error thrown while running command "make:migration". Message: "An exception occurred in driver: SQLSTATE[HY000] [1044] Access denied for user 'nagui'@'%' to database 'api'"
+
+[15-Jan-2021 16:01:24 UTC] [error] Error thrown while running command "'make:f'". Message: "Command "make:f" is ambiguous.
+Did you mean one of these?
+    make:fixtures        Creates a new class to load Doctrine fixtures
+    make:form            Creates a new form class
+    make:functional-test Creates a new functional test class."
+
+[15-Jan-2021 16:10:25 UTC] [error] Error thrown while running command "fi". Message: "Command "fi" is not defined.
+
+Did you mean one of these?
+    config:dump-reference
+    debug:config
+    doctrine:fixtures:load
+    make:fixtures"
+
+[15-Jan-2021 16:22:07 UTC] 2021-01-15T16:22:07+00:00 [info] User Deprecated: Not passing a connection provider as the first constructor argument is deprecated

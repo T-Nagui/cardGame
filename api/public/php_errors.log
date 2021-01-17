@@ -22,3 +22,39 @@
 
 [15-Jan-2021 14:43:33 UTC] [info] Matched route "base".
 
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[15-Jan-2021 15:25:57 UTC] [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET /"" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 136
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" was not called for event "kernel.exception".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[15-Jan-2021 15:25:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+

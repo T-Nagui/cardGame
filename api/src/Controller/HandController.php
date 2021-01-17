@@ -1,23 +1,28 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Service\HandService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Class BaseController.
  */
-class BaseController extends AbstractController
+class HandController
 {
     /**
-     * @Route("/base", name="base")
+     * @Route("/hand", name="hand")
+     * @param HandService $handService
+     * @return JsonResponse
      */
-    public function index(): Response
+    public function getHand(HandService $handService): JsonResponse
     {
-        return $this->json([
+        $handService->generateHand();
+        return new JsonResponse([
             'message' => 'Welcome to your new controller!',
             'path' => 'src/Controller/BaseController.php',
         ]);
